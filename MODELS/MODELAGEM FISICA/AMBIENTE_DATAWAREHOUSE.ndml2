@@ -588,8 +588,8 @@
           "type": "table",
           "schemaName": "default",
           "tableName": "DIM_TURNO",
-          "x": 690,
-          "y": 490,
+          "x": 730,
+          "y": 480,
           "width": 200,
           "height": 200,
           "isBold": false,
@@ -791,15 +791,15 @@
           "visible": true,
           "vertices": [
             {
-              "x": 675,
-              "y": 530
+              "x": 715,
+              "y": 520
             },
             {
-              "x": 660,
-              "y": 530
+              "x": 690,
+              "y": 520
             },
             {
-              "x": 660,
+              "x": 690,
               "y": 210
             },
             {
@@ -808,8 +808,8 @@
             }
           ],
           "label": {
-            "x": 476,
-            "y": 492,
+            "x": 516,
+            "y": 482,
             "width": 209,
             "height": 30,
             "fontName": "Arial Unicode MS",
