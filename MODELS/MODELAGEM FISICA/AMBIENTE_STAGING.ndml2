@@ -125,7 +125,7 @@
           },
           {
             "objectType": "Table_LOGICAL",
-            "name": "TB_AUX_TURMA",
+            "name": "TB_AUX_ALUNOS",
             "comment": "",
             "oldName": "",
             "fields": [
@@ -143,43 +143,7 @@
               },
               {
                 "objectType": "TableField_LOGICAL",
-                "name": "COD_TURMA",
-                "type": "",
-                "length": 255,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "COD_TURMA"
-              },
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "NUM_ALUNOS",
-                "type": "",
-                "length": 255,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "NUM_ALUNOS"
-              },
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "COD_PROFESSOR",
-                "type": "",
-                "length": 255,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "COD_PROFESSOR"
-              },
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "COD_TURNO",
+                "name": "COD_ALUNO",
                 "type": "",
                 "length": 0,
                 "decimals": 0,
@@ -187,7 +151,19 @@
                 "defaultType": "None",
                 "defaultValue": "",
                 "comment": "",
-                "oldName": "COD_TURNO"
+                "oldName": "COD_ALUNO"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "NOME_ALUNO",
+                "type": "",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "NOME_ALUNO"
               }
             ],
             "foreignKeys": [],
@@ -267,7 +243,7 @@
           },
           {
             "objectType": "Table_LOGICAL",
-            "name": "TB_AUX_ALUNOS",
+            "name": "TB_AUX_TURMA",
             "comment": "",
             "oldName": "",
             "fields": [
@@ -285,19 +261,43 @@
               },
               {
                 "objectType": "TableField_LOGICAL",
-                "name": "COD_ALUNO",
+                "name": "COD_TURMA",
                 "type": "",
-                "length": 0,
+                "length": 255,
                 "decimals": 0,
                 "isNullable": true,
                 "defaultType": "None",
                 "defaultValue": "",
                 "comment": "",
-                "oldName": "COD_ALUNO"
+                "oldName": "COD_TURMA"
               },
               {
                 "objectType": "TableField_LOGICAL",
-                "name": "NOME_ALUNO",
+                "name": "NUM_ALUNOS",
+                "type": "",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "NUM_ALUNOS"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "COD_PROFESSOR",
+                "type": "",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "COD_PROFESSOR"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "COD_TURNO",
                 "type": "",
                 "length": 0,
                 "decimals": 0,
@@ -305,7 +305,43 @@
                 "defaultType": "None",
                 "defaultValue": "",
                 "comment": "",
-                "oldName": "NOME_ALUNO"
+                "oldName": "COD_TURNO"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "NUM_APROVADOS",
+                "type": "",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "NUM_APROVADOS"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "NUM_REPROVADOS",
+                "type": "",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "NUM_REPROVADOS"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "NUM_TRANCADOS",
+                "type": "",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "NUM_TRANCADOS"
               }
             ],
             "foreignKeys": [],
@@ -350,7 +386,7 @@
           "type": "table",
           "schemaName": "default",
           "tableName": "TB_AUX_TURMA",
-          "x": 50,
+          "x": 60,
           "y": 350,
           "width": 200,
           "height": 200,

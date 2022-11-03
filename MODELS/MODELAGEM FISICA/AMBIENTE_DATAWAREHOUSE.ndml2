@@ -19,7 +19,379 @@
         "tables": [
           {
             "objectType": "Table_LOGICAL",
-            "name": "FATO_DIARIO",
+            "name": "DIM_TURMA",
+            "comment": "",
+            "oldName": "",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "ID_TURMA",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "ID_TURMA"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "COD_TURMA",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "COD_TURMA"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "NUM_ALUNOS",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "NUM_ALUNOS"
+              }
+            ],
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "fk_TB_TURMA_FATO_DIARIO_1",
+                "fields": [
+                  "ID_TURMA"
+                ],
+                "referencedSchema": "default",
+                "referencedTable": "FATO_DIARIO_ACADEMICO",
+                "referencedFields": [
+                  "ID_TURMA"
+                ],
+                "sourceCardinality": "NoneRelationship",
+                "targetCardinality": "ManyRelationship",
+                "comment": "",
+                "oldName": ""
+              }
+            ],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "ID_TURMA"
+              ],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "DIM_TURNO",
+            "comment": "",
+            "oldName": "",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "ID_TURNO",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "ID_TURNO"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "NOME_TURNO",
+                "type": "CHAR",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "NOME_TURNO"
+              }
+            ],
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "fk_TB_TURNO_FATO_DIARIO_1",
+                "fields": [
+                  "ID_TURNO"
+                ],
+                "referencedSchema": "default",
+                "referencedTable": "FATO_DIARIO_ACADEMICO",
+                "referencedFields": [
+                  "ID_TURNO"
+                ],
+                "sourceCardinality": "NoneRelationship",
+                "targetCardinality": "ManyRelationship",
+                "comment": "",
+                "oldName": ""
+              }
+            ],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "ID_TURNO"
+              ],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "DIM_DISCIPLINA",
+            "comment": "",
+            "oldName": "",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "ID_DISCIPLINA",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "ID_DISCIPLINA"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "COD_DISCIPLINA",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "COD_DISCIPLINA"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "NOME_DISCIPLINA",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "NOME_DISCIPLINA"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "NUM_TURMAS",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "NUM_TURMAS"
+              }
+            ],
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "fk_TB_DISCIPLINA_FATO_DIARIO_1",
+                "fields": [
+                  "ID_DISCIPLINA"
+                ],
+                "referencedSchema": "default",
+                "referencedTable": "FATO_DIARIO_ACADEMICO",
+                "referencedFields": [
+                  "ID_DISCIPLINA"
+                ],
+                "sourceCardinality": "NoneRelationship",
+                "targetCardinality": "ManyRelationship",
+                "comment": "",
+                "oldName": ""
+              }
+            ],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "ID_DISCIPLINA"
+              ],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "DIM_PROFESSOR",
+            "comment": "",
+            "oldName": "",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "ID_PROFESSOR",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "ID_PROFESSOR"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "MATRICULA_PROFESSOR",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "MATRICULA_PROFESSOR"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "NOME_PROFESSOR",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "NOME_PROFESSOR"
+              }
+            ],
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "fk_TB_PROFESSOR_FATO_DIARIO_1",
+                "fields": [
+                  "ID_PROFESSOR"
+                ],
+                "referencedSchema": "default",
+                "referencedTable": "FATO_DIARIO_ACADEMICO",
+                "referencedFields": [
+                  "ID_PROFESSOR"
+                ],
+                "sourceCardinality": "NoneRelationship",
+                "targetCardinality": "ManyRelationship",
+                "comment": "",
+                "oldName": ""
+              }
+            ],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "ID_PROFESSOR"
+              ],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "DIM_TEMPO",
+            "comment": "",
+            "oldName": "",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "ID_TEMPO",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "ID_TEMPO"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "SEMESTRE",
+                "type": "INT",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "SEMESTRE"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "ANO",
+                "type": "INT",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "ANO"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "PERIODO_LETIVO",
+                "type": "INT",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "CONCATENAR ANO COMO SEMESTRE",
+                "oldName": "PERIODO_LETIVO"
+              }
+            ],
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "fk_TB_TEMPO_FATO_DIARIO_1",
+                "fields": [
+                  "ID_TEMPO"
+                ],
+                "referencedSchema": "default",
+                "referencedTable": "FATO_DIARIO_ACADEMICO",
+                "referencedFields": [
+                  "ID_TEMPO"
+                ],
+                "sourceCardinality": "NoneRelationship",
+                "targetCardinality": "ManyRelationship",
+                "comment": "",
+                "oldName": ""
+              }
+            ],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "ID_TEMPO"
+              ],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "FATO_DIARIO_ACADEMICO",
             "comment": "",
             "oldName": "",
             "fields": [
@@ -129,378 +501,6 @@
               "fields": [],
               "oldName": ""
             }
-          },
-          {
-            "objectType": "Table_LOGICAL",
-            "name": "TB_TEMPO",
-            "comment": "",
-            "oldName": "",
-            "fields": [
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "ID_TEMPO",
-                "type": "INTEGER",
-                "length": 0,
-                "decimals": 0,
-                "isNullable": false,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "ID_TEMPO"
-              },
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "SEMESTRE",
-                "type": "INT",
-                "length": 0,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "SEMESTRE"
-              },
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "ANO",
-                "type": "INT",
-                "length": 0,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "ANO"
-              },
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "PERIODO_LETIVO",
-                "type": "INT",
-                "length": 0,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "CONCATENAR ANO COMO SEMESTRE",
-                "oldName": "PERIODO_LETIVO"
-              }
-            ],
-            "foreignKeys": [
-              {
-                "objectType": "ForeignKey_LOGICAL",
-                "name": "fk_TB_TEMPO_FATO_DIARIO_1",
-                "fields": [
-                  "ID_TEMPO"
-                ],
-                "referencedSchema": "default",
-                "referencedTable": "FATO_DIARIO",
-                "referencedFields": [
-                  "ID_TEMPO"
-                ],
-                "sourceCardinality": "NoneRelationship",
-                "targetCardinality": "ManyRelationship",
-                "comment": "",
-                "oldName": ""
-              }
-            ],
-            "indexes": [],
-            "uniques": [],
-            "primaryKey": {
-              "objectType": "PrimaryKey_LOGICAL",
-              "name": "",
-              "fields": [
-                "ID_TEMPO"
-              ],
-              "oldName": ""
-            }
-          },
-          {
-            "objectType": "Table_LOGICAL",
-            "name": "TB_TURNO",
-            "comment": "",
-            "oldName": "",
-            "fields": [
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "ID_TURNO",
-                "type": "INTEGER",
-                "length": 0,
-                "decimals": 0,
-                "isNullable": false,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "ID_TURNO"
-              },
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "NOME_TURNO",
-                "type": "CHAR",
-                "length": 0,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "NOME_TURNO"
-              }
-            ],
-            "foreignKeys": [
-              {
-                "objectType": "ForeignKey_LOGICAL",
-                "name": "fk_TB_TURNO_FATO_DIARIO_1",
-                "fields": [
-                  "ID_TURNO"
-                ],
-                "referencedSchema": "default",
-                "referencedTable": "FATO_DIARIO",
-                "referencedFields": [
-                  "ID_TURNO"
-                ],
-                "sourceCardinality": "NoneRelationship",
-                "targetCardinality": "ManyRelationship",
-                "comment": "",
-                "oldName": ""
-              }
-            ],
-            "indexes": [],
-            "uniques": [],
-            "primaryKey": {
-              "objectType": "PrimaryKey_LOGICAL",
-              "name": "",
-              "fields": [
-                "ID_TURNO"
-              ],
-              "oldName": ""
-            }
-          },
-          {
-            "objectType": "Table_LOGICAL",
-            "name": "TB_DISCIPLINA",
-            "comment": "",
-            "oldName": "",
-            "fields": [
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "ID_DISCIPLINA",
-                "type": "INTEGER",
-                "length": 0,
-                "decimals": 0,
-                "isNullable": false,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "ID_DISCIPLINA"
-              },
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "COD_DISCIPLINA",
-                "type": "CHAR VARYING",
-                "length": 255,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "COD_DISCIPLINA"
-              },
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "NOME_DISCIPLINA",
-                "type": "CHAR VARYING",
-                "length": 255,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "NOME_DISCIPLINA"
-              },
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "NUM_TURMAS",
-                "type": "CHAR VARYING",
-                "length": 255,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "NUM_TURMAS"
-              }
-            ],
-            "foreignKeys": [
-              {
-                "objectType": "ForeignKey_LOGICAL",
-                "name": "fk_TB_DISCIPLINA_FATO_DIARIO_1",
-                "fields": [
-                  "ID_DISCIPLINA"
-                ],
-                "referencedSchema": "default",
-                "referencedTable": "FATO_DIARIO",
-                "referencedFields": [
-                  "ID_DISCIPLINA"
-                ],
-                "sourceCardinality": "NoneRelationship",
-                "targetCardinality": "ManyRelationship",
-                "comment": "",
-                "oldName": ""
-              }
-            ],
-            "indexes": [],
-            "uniques": [],
-            "primaryKey": {
-              "objectType": "PrimaryKey_LOGICAL",
-              "name": "",
-              "fields": [
-                "ID_DISCIPLINA"
-              ],
-              "oldName": ""
-            }
-          },
-          {
-            "objectType": "Table_LOGICAL",
-            "name": "TB_TURMA",
-            "comment": "",
-            "oldName": "",
-            "fields": [
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "ID_TURMA",
-                "type": "INTEGER",
-                "length": 0,
-                "decimals": 0,
-                "isNullable": false,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "ID_TURMA"
-              },
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "COD_TURMA",
-                "type": "CHAR VARYING",
-                "length": 255,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "COD_TURMA"
-              },
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "NUM_ALUNOS",
-                "type": "CHAR VARYING",
-                "length": 255,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "NUM_ALUNOS"
-              }
-            ],
-            "foreignKeys": [
-              {
-                "objectType": "ForeignKey_LOGICAL",
-                "name": "fk_TB_TURMA_FATO_DIARIO_1",
-                "fields": [
-                  "ID_TURMA"
-                ],
-                "referencedSchema": "default",
-                "referencedTable": "FATO_DIARIO",
-                "referencedFields": [
-                  "ID_TURMA"
-                ],
-                "sourceCardinality": "NoneRelationship",
-                "targetCardinality": "ManyRelationship",
-                "comment": "",
-                "oldName": ""
-              }
-            ],
-            "indexes": [],
-            "uniques": [],
-            "primaryKey": {
-              "objectType": "PrimaryKey_LOGICAL",
-              "name": "",
-              "fields": [
-                "ID_TURMA"
-              ],
-              "oldName": ""
-            }
-          },
-          {
-            "objectType": "Table_LOGICAL",
-            "name": "TB_PROFESSOR",
-            "comment": "",
-            "oldName": "",
-            "fields": [
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "ID_PROFESSOR",
-                "type": "INTEGER",
-                "length": 0,
-                "decimals": 0,
-                "isNullable": false,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "ID_PROFESSOR"
-              },
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "MATRICULA_PROFESSOR",
-                "type": "CHAR VARYING",
-                "length": 255,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "MATRICULA_PROFESSOR"
-              },
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "NOME_PROFESSOR",
-                "type": "CHAR VARYING",
-                "length": 255,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "NOME_PROFESSOR"
-              }
-            ],
-            "foreignKeys": [
-              {
-                "objectType": "ForeignKey_LOGICAL",
-                "name": "fk_TB_PROFESSOR_FATO_DIARIO_1",
-                "fields": [
-                  "ID_PROFESSOR"
-                ],
-                "referencedSchema": "default",
-                "referencedTable": "FATO_DIARIO",
-                "referencedFields": [
-                  "ID_PROFESSOR"
-                ],
-                "sourceCardinality": "NoneRelationship",
-                "targetCardinality": "ManyRelationship",
-                "comment": "",
-                "oldName": ""
-              }
-            ],
-            "indexes": [],
-            "uniques": [],
-            "primaryKey": {
-              "objectType": "PrimaryKey_LOGICAL",
-              "name": "",
-              "fields": [
-                "ID_PROFESSOR"
-              ],
-              "oldName": ""
-            }
           }
         ]
       }
@@ -523,10 +523,10 @@
         {
           "type": "table",
           "schemaName": "default",
-          "tableName": "FATO_DIARIO",
-          "x": 430,
+          "tableName": "FATO_DIARIO_ACADEMICO",
+          "x": 440,
           "y": 90,
-          "width": 200,
+          "width": 210,
           "height": 300,
           "isBold": false,
           "titleColor": {
@@ -539,7 +539,7 @@
         {
           "type": "table",
           "schemaName": "default",
-          "tableName": "TB_TEMPO",
+          "tableName": "DIM_TEMPO",
           "x": 110,
           "y": 90,
           "width": 200,
@@ -555,7 +555,7 @@
         {
           "type": "table",
           "schemaName": "default",
-          "tableName": "TB_PROFESSOR",
+          "tableName": "DIM_PROFESSOR",
           "x": 110,
           "y": 300,
           "width": 200,
@@ -571,8 +571,8 @@
         {
           "type": "table",
           "schemaName": "default",
-          "tableName": "TB_TURMA",
-          "x": 750,
+          "tableName": "DIM_TURMA",
+          "x": 730,
           "y": 150,
           "width": 200,
           "height": 200,
@@ -587,9 +587,9 @@
         {
           "type": "table",
           "schemaName": "default",
-          "tableName": "TB_TURNO",
-          "x": 750,
-          "y": 390,
+          "tableName": "DIM_TURNO",
+          "x": 690,
+          "y": 490,
           "width": 200,
           "height": 200,
           "isBold": false,
@@ -603,9 +603,9 @@
         {
           "type": "table",
           "schemaName": "default",
-          "tableName": "TB_DISCIPLINA",
+          "tableName": "DIM_DISCIPLINA",
           "x": 310,
-          "y": 530,
+          "y": 500,
           "width": 200,
           "height": 200,
           "isBold": false,
@@ -621,7 +621,7 @@
       "relations": [
         {
           "name": "fk_TB_TEMPO_FATO_DIARIO_1",
-          "sourceTableName": "TB_TEMPO",
+          "sourceTableName": "DIM_TEMPO",
           "sourceSchemaName": "default",
           "lineWidth": 1,
           "visible": true,
@@ -639,7 +639,7 @@
               "y": 140
             },
             {
-              "x": 415,
+              "x": 425,
               "y": 140
             }
           ],
@@ -663,7 +663,7 @@
         },
         {
           "name": "fk_TB_PROFESSOR_FATO_DIARIO_1",
-          "sourceTableName": "TB_PROFESSOR",
+          "sourceTableName": "DIM_PROFESSOR",
           "sourceSchemaName": "default",
           "lineWidth": 1,
           "visible": true,
@@ -681,7 +681,7 @@
               "y": 160
             },
             {
-              "x": 415,
+              "x": 425,
               "y": 160
             }
           ],
@@ -705,14 +705,14 @@
         },
         {
           "name": "fk_TB_DISCIPLINA_FATO_DIARIO_1",
-          "sourceTableName": "TB_DISCIPLINA",
+          "sourceTableName": "DIM_DISCIPLINA",
           "sourceSchemaName": "default",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
             {
               "x": 410,
-              "y": 515
+              "y": 485
             },
             {
               "x": 410,
@@ -723,13 +723,13 @@
               "y": 180
             },
             {
-              "x": 415,
+              "x": 425,
               "y": 180
             }
           ],
           "label": {
             "x": 418,
-            "y": 495,
+            "y": 465,
             "width": 236,
             "height": 30,
             "fontName": "Arial Unicode MS",
@@ -747,13 +747,13 @@
         },
         {
           "name": "fk_TB_TURMA_FATO_DIARIO_1",
-          "sourceTableName": "TB_TURMA",
+          "sourceTableName": "DIM_TURMA",
           "sourceSchemaName": "default",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
             {
-              "x": 735,
+              "x": 715,
               "y": 190
             },
             {
@@ -761,12 +761,12 @@
               "y": 190
             },
             {
-              "x": 645,
+              "x": 665,
               "y": 190
             }
           ],
           "label": {
-            "x": 534,
+            "x": 514,
             "y": 152,
             "width": 211,
             "height": 30,
@@ -785,31 +785,31 @@
         },
         {
           "name": "fk_TB_TURNO_FATO_DIARIO_1",
-          "sourceTableName": "TB_TURNO",
+          "sourceTableName": "DIM_TURNO",
           "sourceSchemaName": "default",
           "lineWidth": 1,
           "visible": true,
           "vertices": [
             {
-              "x": 735,
-              "y": 430
+              "x": 675,
+              "y": 530
             },
             {
               "x": 660,
-              "y": 430
+              "y": 530
             },
             {
               "x": 660,
               "y": 210
             },
             {
-              "x": 645,
+              "x": 665,
               "y": 210
             }
           ],
           "label": {
-            "x": 536,
-            "y": 392,
+            "x": 476,
+            "y": 492,
             "width": 209,
             "height": 30,
             "fontName": "Arial Unicode MS",
