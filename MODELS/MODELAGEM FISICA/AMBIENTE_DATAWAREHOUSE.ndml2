@@ -307,90 +307,6 @@
           },
           {
             "objectType": "Table_LOGICAL",
-            "name": "DIM_TEMPO",
-            "comment": "",
-            "oldName": "",
-            "fields": [
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "ID_TEMPO",
-                "type": "INTEGER",
-                "length": 0,
-                "decimals": 0,
-                "isNullable": false,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "ID_TEMPO"
-              },
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "SEMESTRE",
-                "type": "INT",
-                "length": 0,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "SEMESTRE"
-              },
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "ANO",
-                "type": "INT",
-                "length": 0,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "ANO"
-              },
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "PERIODO_LETIVO",
-                "type": "INT",
-                "length": 0,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "CONCATENAR ANO COMO SEMESTRE",
-                "oldName": "PERIODO_LETIVO"
-              }
-            ],
-            "foreignKeys": [
-              {
-                "objectType": "ForeignKey_LOGICAL",
-                "name": "fk_TB_TEMPO_FATO_DIARIO_1",
-                "fields": [
-                  "ID_TEMPO"
-                ],
-                "referencedSchema": "default",
-                "referencedTable": "FATO_DIARIO_ACADEMICO",
-                "referencedFields": [
-                  "ID_TEMPO"
-                ],
-                "sourceCardinality": "NoneRelationship",
-                "targetCardinality": "ManyRelationship",
-                "comment": "",
-                "oldName": ""
-              }
-            ],
-            "indexes": [],
-            "uniques": [],
-            "primaryKey": {
-              "objectType": "PrimaryKey_LOGICAL",
-              "name": "",
-              "fields": [
-                "ID_TEMPO"
-              ],
-              "oldName": ""
-            }
-          },
-          {
-            "objectType": "Table_LOGICAL",
             "name": "FATO_DIARIO_ACADEMICO",
             "comment": "",
             "oldName": "",
@@ -499,6 +415,114 @@
               "objectType": "PrimaryKey_LOGICAL",
               "name": "",
               "fields": [],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "DIM_TEMPO",
+            "comment": "",
+            "oldName": "",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "ID_TEMPO",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "ID_TEMPO"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "NIVEL",
+                "type": "CHAR VARYING",
+                "length": 50,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "NIVEL"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "SEMESTRE",
+                "type": "INT",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "SEMESTRE"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "NOME_SEMESTRE",
+                "type": "CHAR VARYING",
+                "length": 50,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "NOME_SEMESTRE"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "ANO",
+                "type": "INT",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "ANO"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "PERIODO_LETIVO",
+                "type": "CHAR VARYING",
+                "length": 6,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "CONCATENAR ANO COMO SEMESTRE",
+                "oldName": "PERIODO_LETIVO"
+              }
+            ],
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "fk_TB_TEMPO_FATO_DIARIO_1",
+                "fields": [
+                  "ID_TEMPO"
+                ],
+                "referencedSchema": "default",
+                "referencedTable": "FATO_DIARIO_ACADEMICO",
+                "referencedFields": [
+                  "ID_TEMPO"
+                ],
+                "sourceCardinality": "NoneRelationship",
+                "targetCardinality": "ManyRelationship",
+                "comment": "",
+                "oldName": ""
+              }
+            ],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "ID_TEMPO"
+              ],
               "oldName": ""
             }
           }

@@ -96,8 +96,8 @@
                 "referencedFields": [
                   "ID_TURMA"
                 ],
-                "sourceCardinality": "NoneRelationship",
-                "targetCardinality": "ManyRelationship",
+                "sourceCardinality": "ManyRelationship",
+                "targetCardinality": "NoneRelationship",
                 "comment": "",
                 "oldName": ""
               }
@@ -115,144 +115,10 @@
           },
           {
             "objectType": "Table_LOGICAL",
-            "name": "TB_PROFESSOR",
-            "comment": "",
-            "oldName": "",
-            "fields": [
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "ID_PROF",
-                "type": "INT",
-                "length": 255,
-                "decimals": 0,
-                "isNullable": false,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "ID_PROF"
-              },
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "COD_PROFESSOR",
-                "type": "CHAR VARYING",
-                "length": 255,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "COD_PROFESSOR"
-              },
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "MATRICULA_PROFESSOR",
-                "type": "CHAR VARYING",
-                "length": 255,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "MATRICULA_PROFESSOR"
-              },
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "NOME_PROFESSOR",
-                "type": "CHAR VARYING",
-                "length": 255,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "NOME_PROFESSOR"
-              }
-            ],
-            "foreignKeys": [],
-            "indexes": [],
-            "uniques": [],
-            "primaryKey": {
-              "objectType": "PrimaryKey_LOGICAL",
-              "name": "",
-              "fields": [
-                "ID_PROF"
-              ],
-              "oldName": ""
-            }
-          },
-          {
-            "objectType": "Table_LOGICAL",
-            "name": "TB_TURNO",
-            "comment": "",
-            "oldName": "",
-            "fields": [
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "ID_TURNO",
-                "type": "INT",
-                "length": 0,
-                "decimals": 0,
-                "isNullable": false,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "ID_TURNO"
-              },
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "COD_TURNO",
-                "type": "INTEGER",
-                "length": 0,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "COD_TURNO"
-              },
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "NOME_TURNO",
-                "type": "CHAR VARYING",
-                "length": 0,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "NOME_TURNO"
-              }
-            ],
-            "foreignKeys": [],
-            "indexes": [],
-            "uniques": [],
-            "primaryKey": {
-              "objectType": "PrimaryKey_LOGICAL",
-              "name": "",
-              "fields": [
-                "ID_TURNO"
-              ],
-              "oldName": ""
-            }
-          },
-          {
-            "objectType": "Table_LOGICAL",
             "name": "TB_ALUNO_TURMA",
             "comment": "",
             "oldName": "",
             "fields": [
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "ID_ALUNO_TURMA",
-                "type": "CHAR VARYING",
-                "length": 255,
-                "decimals": 0,
-                "isNullable": false,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "ID_ALUNO_TURMA"
-              },
               {
                 "objectType": "TableField_LOGICAL",
                 "name": "ID_TURMA",
@@ -313,9 +179,7 @@
             "primaryKey": {
               "objectType": "PrimaryKey_LOGICAL",
               "name": "",
-              "fields": [
-                "ID_ALUNO_TURMA"
-              ],
+              "fields": [],
               "oldName": ""
             }
           },
@@ -336,18 +200,6 @@
                 "defaultValue": "",
                 "comment": "",
                 "oldName": "ID_ALUNO"
-              },
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "COD_ALUNO",
-                "type": "INTEGER",
-                "length": 0,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "COD_ALUNO"
               },
               {
                 "objectType": "TableField_LOGICAL",
@@ -405,6 +257,61 @@
           },
           {
             "objectType": "Table_LOGICAL",
+            "name": "TB_PROFESSOR",
+            "comment": "",
+            "oldName": "",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "ID_PROF",
+                "type": "INT",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "ID_PROF"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "MATRICULA_PROFESSOR",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "MATRICULA_PROFESSOR"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "NOME_PROFESSOR",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "NOME_PROFESSOR"
+              }
+            ],
+            "foreignKeys": [],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "ID_PROF"
+              ],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
             "name": "TB_TURMA",
             "comment": "",
             "oldName": "",
@@ -420,18 +327,6 @@
                 "defaultValue": "",
                 "comment": "",
                 "oldName": "ID_TURMA"
-              },
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "COD_TURMA",
-                "type": "CHAR VARYING",
-                "length": 255,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "COD_TURMA"
               },
               {
                 "objectType": "TableField_LOGICAL",
@@ -535,6 +430,49 @@
               "name": "",
               "fields": [
                 "ID_TURMA"
+              ],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "TB_TURNO",
+            "comment": "",
+            "oldName": "",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "ID_TURNO",
+                "type": "INT",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "ID_TURNO"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "NOME_TURNO",
+                "type": "CHAR VARYING",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "NOME_TURNO"
+              }
+            ],
+            "foreignKeys": [],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "ID_TURNO"
               ],
               "oldName": ""
             }
