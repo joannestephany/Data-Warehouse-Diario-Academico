@@ -19,102 +19,6 @@
         "tables": [
           {
             "objectType": "Table_LOGICAL",
-            "name": "TB_DISCIPLINA",
-            "comment": "",
-            "oldName": "",
-            "fields": [
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "ID_DISCIPLINA",
-                "type": "INT",
-                "length": 255,
-                "decimals": 0,
-                "isNullable": false,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "ID_DISCIPLINA"
-              },
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "COD_DISCIPLINA",
-                "type": "CHAR VARYING",
-                "length": 255,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "COD_DISCIPLINA"
-              },
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "NOME_DISCIPLINA",
-                "type": "CHAR VARYING",
-                "length": 255,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "NOME_DISCIPLINA"
-              },
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "NUM_TURMAS",
-                "type": "CHAR VARYING",
-                "length": 255,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "NUM_TURMAS"
-              },
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "ID_TURMA",
-                "type": "CHAR VARYING",
-                "length": 255,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "ID_TURMA"
-              }
-            ],
-            "foreignKeys": [
-              {
-                "objectType": "ForeignKey_LOGICAL",
-                "name": "fk_DISCIPLINA_TURMA_1",
-                "fields": [
-                  "ID_TURMA"
-                ],
-                "referencedSchema": "default",
-                "referencedTable": "TB_TURMA",
-                "referencedFields": [
-                  "ID_TURMA"
-                ],
-                "sourceCardinality": "ManyRelationship",
-                "targetCardinality": "NoneRelationship",
-                "comment": "",
-                "oldName": ""
-              }
-            ],
-            "indexes": [],
-            "uniques": [],
-            "primaryKey": {
-              "objectType": "PrimaryKey_LOGICAL",
-              "name": "",
-              "fields": [
-                "ID_DISCIPLINA"
-              ],
-              "oldName": ""
-            }
-          },
-          {
-            "objectType": "Table_LOGICAL",
             "name": "TB_ALUNO_TURMA",
             "comment": "",
             "oldName": "",
@@ -312,6 +216,133 @@
           },
           {
             "objectType": "Table_LOGICAL",
+            "name": "TB_TURNO",
+            "comment": "",
+            "oldName": "",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "ID_TURNO",
+                "type": "INT",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "ID_TURNO"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "NOME_TURNO",
+                "type": "CHAR VARYING",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "NOME_TURNO"
+              }
+            ],
+            "foreignKeys": [],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "ID_TURNO"
+              ],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "TB_DISCIPLINA",
+            "comment": "",
+            "oldName": "",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "ID_DISCIPLINA",
+                "type": "INT",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "ID_DISCIPLINA"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "COD_DISCIPLINA",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "COD_DISCIPLINA"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "NOME_DISCIPLINA",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "NOME_DISCIPLINA"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "NUM_TURMAS",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "NUM_TURMAS"
+              }
+            ],
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "fk_DISCIPLINA_TURMA_1",
+                "fields": [
+                  "ID_TURMA"
+                ],
+                "referencedSchema": "default",
+                "referencedTable": "TB_TURMA",
+                "referencedFields": [
+                  "ID_TURMA"
+                ],
+                "sourceCardinality": "ManyRelationship",
+                "targetCardinality": "NoneRelationship",
+                "comment": "",
+                "oldName": ""
+              }
+            ],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "ID_DISCIPLINA"
+              ],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
             "name": "TB_TURMA",
             "comment": "",
             "oldName": "",
@@ -330,18 +361,6 @@
               },
               {
                 "objectType": "TableField_LOGICAL",
-                "name": "NUM_ALUNOS",
-                "type": "CHAR VARYING",
-                "length": 255,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "NUM_ALUNOS"
-              },
-              {
-                "objectType": "TableField_LOGICAL",
                 "name": "ID_PROF",
                 "type": "CHAR VARYING",
                 "length": 255,
@@ -354,6 +373,18 @@
               },
               {
                 "objectType": "TableField_LOGICAL",
+                "name": "ID_DISCIPLINA",
+                "type": "INT",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "ID_DISCIPLINA"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
                 "name": "ID_TURNO",
                 "type": "INTEGER",
                 "length": 0,
@@ -363,6 +394,18 @@
                 "defaultValue": "",
                 "comment": "",
                 "oldName": "ID_TURNO"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "NUM_ALUNOS",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "NUM_ALUNOS"
               },
               {
                 "objectType": "TableField_LOGICAL",
@@ -430,49 +473,6 @@
               "name": "",
               "fields": [
                 "ID_TURMA"
-              ],
-              "oldName": ""
-            }
-          },
-          {
-            "objectType": "Table_LOGICAL",
-            "name": "TB_TURNO",
-            "comment": "",
-            "oldName": "",
-            "fields": [
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "ID_TURNO",
-                "type": "INT",
-                "length": 0,
-                "decimals": 0,
-                "isNullable": false,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "ID_TURNO"
-              },
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "NOME_TURNO",
-                "type": "CHAR VARYING",
-                "length": 0,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "NOME_TURNO"
-              }
-            ],
-            "foreignKeys": [],
-            "indexes": [],
-            "uniques": [],
-            "primaryKey": {
-              "objectType": "PrimaryKey_LOGICAL",
-              "name": "",
-              "fields": [
-                "ID_TURNO"
               ],
               "oldName": ""
             }

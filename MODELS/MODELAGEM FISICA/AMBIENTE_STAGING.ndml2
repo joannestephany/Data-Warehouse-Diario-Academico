@@ -19,183 +19,6 @@
         "tables": [
           {
             "objectType": "Table_LOGICAL",
-            "name": "TB_AUX_PROFESSOR",
-            "comment": "",
-            "oldName": "",
-            "fields": [
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "DATA_CARGA",
-                "type": "",
-                "length": 255,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "DATA_CARGA"
-              },
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "COD_PROFESSOR",
-                "type": "",
-                "length": 255,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "COD_PROFESSOR"
-              },
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "MATRICULA_PROFESSOR",
-                "type": "",
-                "length": 255,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "MATRICULA_PROFESSOR"
-              },
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "NOME_PROFESSOR",
-                "type": "",
-                "length": 255,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "NOME_PROFESSOR"
-              }
-            ],
-            "foreignKeys": [],
-            "indexes": [],
-            "uniques": []
-          },
-          {
-            "objectType": "Table_LOGICAL",
-            "name": "TB_AUX_TURNO",
-            "comment": "",
-            "oldName": "",
-            "fields": [
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "DATA_CARGA",
-                "type": "",
-                "length": 255,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "DATA_CARGA"
-              },
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "COD_TURNO",
-                "type": "",
-                "length": 0,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "COD_TURNO"
-              },
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "NOME_TURNO",
-                "type": "",
-                "length": 0,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "NOME_TURNO"
-              }
-            ],
-            "foreignKeys": [],
-            "indexes": [],
-            "uniques": []
-          },
-          {
-            "objectType": "Table_LOGICAL",
-            "name": "TB_AUX_DISCIPLINA",
-            "comment": "",
-            "oldName": "",
-            "fields": [
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "DATA_CARGA",
-                "type": "",
-                "length": 255,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "DATA_CARGA"
-              },
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "COD_DISCIPLINA",
-                "type": "",
-                "length": 255,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "COD_DISCIPLINA"
-              },
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "NOME_DISCIPLINA",
-                "type": "",
-                "length": 255,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "NOME_DISCIPLINA"
-              },
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "NUM_TURMAS",
-                "type": "",
-                "length": 0,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "NUM_TURMAS"
-              },
-              {
-                "objectType": "TableField_LOGICAL",
-                "name": "COD_TURMA",
-                "type": "",
-                "length": 255,
-                "decimals": 0,
-                "isNullable": true,
-                "defaultType": "None",
-                "defaultValue": "",
-                "comment": "",
-                "oldName": "COD_TURMA"
-              }
-            ],
-            "foreignKeys": [],
-            "indexes": [],
-            "uniques": []
-          },
-          {
-            "objectType": "Table_LOGICAL",
             "name": "TB_AUX_ALUNO",
             "comment": "",
             "oldName": "",
@@ -243,7 +66,7 @@
           },
           {
             "objectType": "Table_LOGICAL",
-            "name": "TB_AUX_DIARIO_ACADEMICO",
+            "name": "VIO_FATO",
             "comment": "",
             "oldName": "",
             "fields": [
@@ -261,7 +84,7 @@
               },
               {
                 "objectType": "TableField_LOGICAL",
-                "name": "COD_PROFESSOR",
+                "name": "ID_PROFESSOR",
                 "type": "",
                 "length": 255,
                 "decimals": 0,
@@ -269,11 +92,11 @@
                 "defaultType": "None",
                 "defaultValue": "",
                 "comment": "",
-                "oldName": "COD_PROFESSOR"
+                "oldName": "ID_PROFESSOR"
               },
               {
                 "objectType": "TableField_LOGICAL",
-                "name": "COD_DISCIPLINA",
+                "name": "ID_DISCIPLINA",
                 "type": "",
                 "length": 255,
                 "decimals": 0,
@@ -281,11 +104,11 @@
                 "defaultType": "None",
                 "defaultValue": "",
                 "comment": "",
-                "oldName": "COD_DISCIPLINA"
+                "oldName": "ID_DISCIPLINA"
               },
               {
                 "objectType": "TableField_LOGICAL",
-                "name": "COD_TURMA",
+                "name": "ID_TURMA",
                 "type": "",
                 "length": 255,
                 "decimals": 0,
@@ -293,11 +116,11 @@
                 "defaultType": "None",
                 "defaultValue": "",
                 "comment": "",
-                "oldName": "COD_TURMA"
+                "oldName": "ID_TURMA"
               },
               {
                 "objectType": "TableField_LOGICAL",
-                "name": "COD_TURNO",
+                "name": "ID_TURNO",
                 "type": "",
                 "length": 0,
                 "decimals": 0,
@@ -305,7 +128,7 @@
                 "defaultType": "None",
                 "defaultValue": "",
                 "comment": "",
-                "oldName": "COD_TURNO"
+                "oldName": "ID_TURNO"
               },
               {
                 "objectType": "TableField_LOGICAL",
@@ -342,6 +165,30 @@
                 "defaultValue": "",
                 "comment": "",
                 "oldName": "NUM_TRANCADOS"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "DATA_ERRO",
+                "type": "DATE",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "DATA_ERRO"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "VIOLACAO",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "VIOLACAO"
               }
             ],
             "foreignKeys": [],
@@ -350,7 +197,7 @@
           },
           {
             "objectType": "Table_LOGICAL",
-            "name": "TB_AUX_TURMA",
+            "name": "AUX_TURNO",
             "comment": "",
             "oldName": "",
             "fields": [
@@ -368,7 +215,42 @@
               },
               {
                 "objectType": "TableField_LOGICAL",
-                "name": "COD_TURMA",
+                "name": "ID_TURNO",
+                "type": "",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "ID_TURNO"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "NOME_TURNO",
+                "type": "",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "NOME_TURNO"
+              }
+            ],
+            "foreignKeys": [],
+            "indexes": [],
+            "uniques": []
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "AUX_DISCIPLINA",
+            "comment": "",
+            "oldName": "",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "DATA_CARGA",
                 "type": "",
                 "length": 255,
                 "decimals": 0,
@@ -376,7 +258,149 @@
                 "defaultType": "None",
                 "defaultValue": "",
                 "comment": "",
-                "oldName": "COD_TURMA"
+                "oldName": "DATA_CARGA"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "ID_DISCIPLINA",
+                "type": "",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "ID_DISCIPLINA"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "COD_DISCIPLINA",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "COD_DISCIPLINA"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "NOME_DISCIPLINA",
+                "type": "",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "NOME_DISCIPLINA"
+              }
+            ],
+            "foreignKeys": [],
+            "indexes": [],
+            "uniques": []
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "AUX_PROFESSOR",
+            "comment": "",
+            "oldName": "",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "DATA_CARGA",
+                "type": "",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "DATA_CARGA"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "ID_PROFESSOR",
+                "type": "",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "ID_PROFESSOR"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "MATRICULA_PROFESSOR",
+                "type": "",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "MATRICULA_PROFESSOR"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "NOME_PROFESSOR",
+                "type": "",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "NOME_PROFESSOR"
+              }
+            ],
+            "foreignKeys": [],
+            "indexes": [],
+            "uniques": []
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "AUX_TURMA",
+            "comment": "",
+            "oldName": "",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "DATA_CARGA",
+                "type": "",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "DATA_CARGA"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "ID_TURMA",
+                "type": "",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "ID_TURMA"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "ID_DISCIPLINA",
+                "type": "INT",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "ID_DISCIPLINA"
               },
               {
                 "objectType": "TableField_LOGICAL",
@@ -397,7 +421,7 @@
           },
           {
             "objectType": "Table_LOGICAL",
-            "name": "TB_VIO_AUX_DIARIO_ACADEMICO",
+            "name": "AUX_FATO",
             "comment": "",
             "oldName": "",
             "fields": [
@@ -415,7 +439,7 @@
               },
               {
                 "objectType": "TableField_LOGICAL",
-                "name": "COD_PROFESSOR",
+                "name": "ID_PROFESSOR",
                 "type": "",
                 "length": 255,
                 "decimals": 0,
@@ -423,11 +447,11 @@
                 "defaultType": "None",
                 "defaultValue": "",
                 "comment": "",
-                "oldName": "COD_PROFESSOR"
+                "oldName": "ID_PROFESSOR"
               },
               {
                 "objectType": "TableField_LOGICAL",
-                "name": "COD_DISCIPLINA",
+                "name": "ID_DISCIPLINA",
                 "type": "",
                 "length": 255,
                 "decimals": 0,
@@ -435,11 +459,11 @@
                 "defaultType": "None",
                 "defaultValue": "",
                 "comment": "",
-                "oldName": "COD_DISCIPLINA"
+                "oldName": "ID_DISCIPLINA"
               },
               {
                 "objectType": "TableField_LOGICAL",
-                "name": "COD_TURMA",
+                "name": "ID_TURMA",
                 "type": "",
                 "length": 255,
                 "decimals": 0,
@@ -447,11 +471,11 @@
                 "defaultType": "None",
                 "defaultValue": "",
                 "comment": "",
-                "oldName": "COD_TURMA"
+                "oldName": "ID_TURMA"
               },
               {
                 "objectType": "TableField_LOGICAL",
-                "name": "COD_TURNO",
+                "name": "ID_TURNO",
                 "type": "",
                 "length": 0,
                 "decimals": 0,
@@ -459,7 +483,7 @@
                 "defaultType": "None",
                 "defaultValue": "",
                 "comment": "",
-                "oldName": "COD_TURNO"
+                "oldName": "ID_TURNO"
               },
               {
                 "objectType": "TableField_LOGICAL",
@@ -496,6 +520,30 @@
                 "defaultValue": "",
                 "comment": "",
                 "oldName": "NUM_TRANCADOS"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "ANO",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "ANO"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "SEMESTRE",
+                "type": "",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "SEMESTRE"
               }
             ],
             "foreignKeys": [],
@@ -523,8 +571,8 @@
         {
           "type": "table",
           "schemaName": "default",
-          "tableName": "TB_AUX_PROFESSOR",
-          "x": 50,
+          "tableName": "AUX_PROFESSOR",
+          "x": 60,
           "y": 90,
           "width": 200,
           "height": 200,
@@ -539,7 +587,7 @@
         {
           "type": "table",
           "schemaName": "default",
-          "tableName": "TB_AUX_TURMA",
+          "tableName": "AUX_TURMA",
           "x": 60,
           "y": 350,
           "width": 200,
@@ -555,7 +603,7 @@
         {
           "type": "table",
           "schemaName": "default",
-          "tableName": "TB_AUX_DISCIPLINA",
+          "tableName": "AUX_DISCIPLINA",
           "x": 300,
           "y": 90,
           "width": 200,
@@ -571,7 +619,7 @@
         {
           "type": "table",
           "schemaName": "default",
-          "tableName": "TB_AUX_TURNO",
+          "tableName": "AUX_TURNO",
           "x": 300,
           "y": 350,
           "width": 200,
@@ -587,11 +635,11 @@
         {
           "type": "table",
           "schemaName": "default",
-          "tableName": "TB_AUX_DIARIO_ACADEMICO",
+          "tableName": "AUX_FATO",
           "x": 540,
           "y": 90,
           "width": 250,
-          "height": 200,
+          "height": 240,
           "isBold": false,
           "titleColor": {
             "r": 55,
@@ -603,11 +651,11 @@
         {
           "type": "table",
           "schemaName": "default",
-          "tableName": "TB_VIO_AUX_DIARIO_ACADEMICO",
-          "x": 550,
+          "tableName": "VIO_FATO",
+          "x": 540,
           "y": 350,
           "width": 250,
-          "height": 200,
+          "height": 240,
           "isBold": false,
           "titleColor": {
             "r": 55,
