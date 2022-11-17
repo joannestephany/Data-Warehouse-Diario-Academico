@@ -1,9 +1,7 @@
--- Scripts para povoar o DIMENSÃO TEMPO 
-use DW_DIARIO_ACADEMICO
+-- Scripts para povoar o DIMENSï¿½O TEMPO 
+-- use DW_DIARIO_ACADEMICO
 
-GO
-
--- povoando por mês
+-- povoando por mï¿½s
 GO
 
 create or alter procedure sp_insert_SEMESTRE (@ANO_INICIO INT,@ANO_FIM INT)
@@ -68,11 +66,11 @@ BEGIN
 	END
 END
 GO
-			-- meu teste aqui
-			
-			TRUNCATE TABLE DIM_TEMPO -- LIMPANDO TUDO
+-- meu teste aqui
 
-			EXEC sp_insert_MES 2000, 2022 -- DEU CERTO POR MES
-			EXEC sp_insert_ANO 2000, 2022  -- DEU CERTO POR ANO
+TRUNCATE TABLE DIM_TEMPO -- LIMPANDO TUDO
 
-			SELECT * FROM DIM_TEMPO 
+EXEC sp_insert_MES 2000, 2022 -- DEU CERTO POR MES
+EXEC sp_insert_ANO 2000, 2022  -- DEU CERTO POR ANO
+
+SELECT * FROM DIM_TEMPO 
